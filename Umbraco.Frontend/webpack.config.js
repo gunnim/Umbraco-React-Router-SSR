@@ -2,8 +2,8 @@ var fs      = require('fs');
 var path    = require('path');
 var webpack = require('webpack');
 
-var UmbracoPath    = path.join(__dirname, '../Umbraco.Site/scripts');
-var AspNetCorePath = path.join(__dirname, '../Site/js');
+var UmbracoPath    = path.join(__dirname, '../Umbraco.Site');
+var AspNetCorePath = path.join(__dirname, '../Site');
 
 if (fs.existsSync(UmbracoPath))
 
@@ -24,7 +24,7 @@ var settings = {
         server:  'js/server',
     },
     output: {
-        path: outDir,
+        path: path.join(outDir, 'scripts'),
         filename: '[name].js',
     },
     module: {
