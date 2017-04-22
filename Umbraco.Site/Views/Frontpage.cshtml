@@ -1,8 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Newtonsoft.Json;
+@using GMO.ReactRouterNet;
 
 @{
     Layout = "Master.cshtml";
 }
 
 @section Main {
+    @Html.ReactRouterWithContext("Routing", Request.Url.AbsolutePath, Response)
 }
