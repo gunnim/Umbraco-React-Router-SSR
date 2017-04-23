@@ -16,9 +16,10 @@ Build solution w/ VStudio
 
 navigate to Umbraco.Frontend, fire up your favorite shell and run the following commands:
 
+```bash
 npm install
-
 webpack
+```
 
 ### Now launch the website and try navigating to the following urls
 
@@ -30,5 +31,5 @@ webpack
 
 #### This project uses GMO.ReactRouterNet to extend ReactJS.NET for rendering React Router components server side
 
-https://github.com/gunnim/GMO.ReactRouterNet/blob/master/README.md
+https://github.com/gunnim/GMO.ReactRouterNet
 
