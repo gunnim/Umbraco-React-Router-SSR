@@ -5,12 +5,25 @@
 import * as React from 'react';
 import { 
     Route,
-    Link,
     Switch,
     Redirect,
 } from 'react-router';
+import { Link } from 'react-router-dom';
 
-const Head     = () => <header>Header</header>;
+const Head     = () => 
+  <header>
+    <h3>Header</h3>
+    <ul>
+      <li><Link to="/">One</Link></li>
+      <li><Link to="/two">Two</Link></li>
+      <li><Link to="/three">
+        301 - Copy this link, navigate from browser bar and watch the network log in you developer console
+      </Link></li>
+      <li><Link to="/four">302 - same as above</Link></li>
+      <li><Link to="/thispagedoesnotexist">404 - same as above</Link></li>
+    </ul>
+  </header>
+;
 
 const One      = () => <p>One</p>;
 const Two      = () => <p>Two</p>;
