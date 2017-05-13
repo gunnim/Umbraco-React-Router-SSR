@@ -21,7 +21,3 @@ webpack
 /four
 
 /this-will-result-in-404
-
-#### This project uses GMO.ReactRouterNet to extend ReactJS.NET for rendering React Router components server side
-
-https://github.com/gunnim/GMO.ReactRouterNet
