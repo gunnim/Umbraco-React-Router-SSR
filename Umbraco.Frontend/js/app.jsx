@@ -1,4 +1,4 @@
-﻿/* ===============
+/* ===============
  *  React Routing
  * =============== */
 
@@ -17,7 +17,7 @@ const Head     = () =>
       <li><Link to="/">One</Link></li>
       <li><Link to="/two">Two</Link></li>
       <li><Link to="/three">
-        301 - Copy this link, navigate from browser bar and watch the network log in you developer console
+        301 - Copy this link, navigate from browser bar and watch the network log in your developer console
       </Link></li>
       <li><Link to="/four">302 - same as above</Link></li>
       <li><Link to="/thispagedoesnotexist">404 - same as above</Link></li>
