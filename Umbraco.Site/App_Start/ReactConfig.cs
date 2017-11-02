@@ -1,3 +1,5 @@
+﻿using JavaScriptEngineSwitcher.Core;
+using JavaScriptEngineSwitcher.V8;
 using React;
 using System.Configuration;
 using System.Web.Configuration;
@@ -10,6 +12,8 @@ namespace Umbraco.Site
     {
         public static void Configure()
         {
+            JsEngineSwitcher.Instance.DefaultEngineName = V8JsEngine.EngineName;
+
             // If you want to use server-side rendering of React components, 
             // add all the necessary JavaScript files here. This includes 
             // your components as well as all of their dependencies.
