@@ -110,3 +110,5 @@ UmbracoTraceLog.txt
 **/Umbraco.Site/Scripts/app*.js
 **/Umbraco.Site/Scripts/client*.js
 **/Umbraco.Site/Scripts/server*.js
+
+Umbraco\.Frontend/yarn\.lock
